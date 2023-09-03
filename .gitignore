@@ -130,3 +130,6 @@ dmypy.json
 
 # Other
 *.out
+**/**/results/
+
+.vscode
