@@ -24,7 +24,7 @@ features = 50  # Number of features
 # Generate synthetic data
 print("Generating dataset...")
 X = np.random.rand(n, features)
-y = np.random.randint(2, size=n)
+y = X[:,0] + np.random.randint(2, size=n)
 
 # Split the data into training and test sets
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
