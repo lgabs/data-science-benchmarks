@@ -14,19 +14,19 @@ Every task generate some cool graphs and a csv with the result data. Default val
 
 ### Pure Python task
 Several operations on a big list with pure python.
-![pure_python](images/benchmark_pure_python_1000_samples_results.png)
+![pure_python](images/benchmark_pure_python_100000000_samples_results.png)
 
 ### ML Training Task
 Simple training example with larget dataset and LGBM.
 
-![lgbm](images/benchmark_pure_python_100000000_samples_results.png)
+![lgbm](images/lightgbm_benchmark_10000000_samples_results.png)
 
 ### Pandas Task
 Some large joins in pandas. Still working on this but an example is on `cpu_and_memory_tasks/pandas/benchmark_pandas.py`.
 
 ### TODOs
 
-[ ] Linear Algebra example with numpy
-[ ] Training example with GPU
+- Linear Algebra example with numpy
+- Training example with GPU
 
 I thought about dockerizing everything, but the idea of the project is to give a sense of how your computer will behave in a normal day, and usually data scientists interact with data through jupyter notebooks at most in virtual environments, but not inside docker containers.

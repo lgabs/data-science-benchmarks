@@ -14,7 +14,7 @@ create_folder_if_not_exists(SAVE_DIR)
 
 # Initialize argparse
 parser = argparse.ArgumentParser(description='Benchmark various data science tasks.')
-parser.add_argument('-n', '--number', type=int, default=100_000_000, help='Number of integers in the list.')
+parser.add_argument('-n', '--number', type=int, default=10_000_000, help='Number of integers in the list.')
 args = parser.parse_args()
 n = args.number
 
@@ -24,7 +24,7 @@ features = 50  # Number of features
 # Generate synthetic data
 print("Generating dataset...")
 X = np.random.rand(n, features)
-y = X[:,0] + np.random.randint(2, size=n)
+y = np.random.randint(2, size=n)
 
 # Split the data into training and test sets
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
